@@ -1,0 +1,27 @@
+{
+  "name": "@cineai/source",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "dev": "nx run web:dev",
+    "build": "nx run-many -t build",
+    "lint": "nx run-many -t lint",
+    "test": "nx run-many -t test",
+    "start": "nx run web:start"
+  },
+  "devDependencies": {
+    "nx": "22.6.5",
+    "@nx/next": "22.6.5",
+    "@nx/js": "22.6.5",
+    "@nx/eslint": "22.6.5",
+    "@nx/playwright": "22.6.5",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^15.0.0"
+  }
+}

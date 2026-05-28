@@ -1,0 +1,30 @@
+{
+  "name": "agents",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/agents/src",
+  "projectType": "application",
+  "tags": ["scope:agents", "type:app"],
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "uvicorn src.main:app --reload --port 3002",
+        "cwd": "apps/agents"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ruff check src/",
+        "cwd": "apps/agents"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pytest src/",
+        "cwd": "apps/agents"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2017",
+    "module": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@cineai/ui": ["libs/ui/src/index.ts"],
+      "@cineai/domain-types": ["libs/domain-types/src/index.ts"],
+      "@cineai/mock-data": ["libs/mock-data/src/index.ts"],
+      "@cineai/api-client": ["libs/api-client/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
