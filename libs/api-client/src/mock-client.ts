@@ -1,12 +1,29 @@
-import { VIDEOS, MODELS } from "@cineai/mock-data";
+import { VIDEOS, MODELS, MODEL_CATALOG, BRANDS, SAMPLE_CAMPAIGN } from "@cineai/mock-data";
 import type { ApiClient, GenerationJob, JobEvent, Unsubscribe } from "./types";
-import type { Video, Model } from "@cineai/domain-types";
+import type {
+  Brand,
+  Brief,
+  Campaign,
+  CheckRequest,
+  CheckResponse,
+  FollowUpStatus,
+  Modality,
+  Model,
+  ModelSpec,
+  RouteRequest,
+  RoutingDecision,
+  Video,
+} from "@cineai/domain-types";
+import { mockCheck } from "./mock-guardian";
 
 const delay = (ms = 400) => new Promise((r) => setTimeout(r, ms));
 
 type Listener = (evt: JobEvent) => void;
 
 let jobCounter = 1;
+let campaignCounter = 1;
+const campaigns = new Map<string, Campaign>([[SAMPLE_CAMPAIGN.id, SAMPLE_CAMPAIGN]]);
+const campaignListeners = new Map<string, Set<(c: Campaign) => void>>();
 const jobs = new Map<string, GenerationJob>();
 const listeners = new Map<string, Set<Listener>>();
 
@@ -82,6 +99,131 @@ export class MockClient implements ApiClient {
   async getCredits(): Promise<{ used: number; total: number }> {
     await delay(150);
     return { used: 3720, total: 6000 };
+  }
+
+  // ── Brand OS (demo mode) ─────────────────────────────────────────────────
+  // Campaigns replay a run recorded from the real agents pipeline (see
+  // libs/mock-data/src/brand-os.json); NEXT_PUBLIC_API_MODE=real runs your own brief.
+
+  async listModelCatalog(modality?: Modality): Promise<ModelSpec[]> {
+    await delay(200);
+    return modality ? MODEL_CATALOG.filter((m) => m.modality === modality) : MODEL_CATALOG;
+  }
+
+  async routeModel(req: RouteRequest): Promise<RoutingDecision> {
+    await delay(150);
+    const pool = MODEL_CATALOG.filter((m) => m.modality === req.modality);
+    const pick = pool.find((m) => req.useCase && m.useCases.includes(req.useCase)) ?? pool[0];
+    if (!pick) throw new Error(`No ${req.modality} model available`);
+    return {
+      model: pick,
+      score: 0,
+      reason: "demo mode — connect the agents service for real routing",
+      alternatives: [],
+    };
+  }
+
+  async listBrands(): Promise<Brand[]> {
+    await delay(250);
+    return BRANDS;
+  }
+
+  async getBrand(id: string): Promise<Brand> {
+    await delay(150);
+    const b = BRANDS.find((b) => b.id === id);
+    if (!b) throw new Error(`Brand ${id} not found`);
+    return b;
+  }
+
+  async checkBrand(brandId: string, req: CheckRequest): Promise<CheckResponse> {
+    await delay(250);
+    return mockCheck(await this.getBrand(brandId), req);
+  }
+
+  async listCampaigns(brandId?: string): Promise<Campaign[]> {
+    await delay(300);
+    const all = [...campaigns.values()].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+    return brandId ? all.filter((c) => c.brandId === brandId) : all;
+  }
+
+  async getCampaign(id: string): Promise<Campaign> {
+    await delay(100);
+    const c = campaigns.get(id);
+    if (!c) throw new Error(`Campaign ${id} not found`);
+    return c;
+  }
+
+  async createCampaign(brandId: string, brief: Brief): Promise<Campaign> {
+    await delay(300);
+    const now = new Date().toISOString();
+    const id = `cmp-demo-${campaignCounter++}`;
+    const queued: Campaign = {
+      ...SAMPLE_CAMPAIGN, id, brandId, brief,
+      status: "queued", progress: 0, scenes: [], deliverables: [], ads: [], followUps: [],
+      steps: [], totalCredits: 0, brandScore: 0, createdAt: now, updatedAt: now,
+    };
+    campaigns.set(id, queued);
+    this._replayCampaign(id);
+    return queued;
+  }
+
+  subscribeCampaign(id: string, onUpdate: (c: Campaign) => void): Unsubscribe {
+    let set = campaignListeners.get(id);
+    if (!set) campaignListeners.set(id, (set = new Set()));
+    set.add(onUpdate);
+    const current = campaigns.get(id);
+    if (current) queueMicrotask(() => onUpdate(current));
+    return () => {
+      set?.delete(onUpdate);
+      if (set && set.size === 0) campaignListeners.delete(id);
+    };
+  }
+
+  async updateFollowUp(campaignId: string, followUpId: string, status: FollowUpStatus): Promise<Campaign> {
+    await delay(150);
+    const c = await this.getCampaign(campaignId);
+    const next: Campaign = {
+      ...c,
+      followUps: c.followUps.map((f) => (f.id === followUpId ? { ...f, status } : f)),
+    };
+    campaigns.set(campaignId, next);
+    return next;
+  }
+
+  /** Reveal the recorded run stage by stage so the UI exercises every state. */
+  private _replayCampaign(id: string) {
+    const rec = SAMPLE_CAMPAIGN;
+    const stages: { after: number; patch: (c: Campaign) => Partial<Campaign> }[] = [
+      { after: 500, patch: () => ({ status: "planning", scenes: rec.scenes, steps: rec.steps.slice(0, 1) }) },
+      { after: 1400, patch: () => ({ steps: rec.steps.slice(0, 5) }) },
+      { after: 2300, patch: () => ({
+          status: "producing", progress: 30, totalCredits: rec.totalCredits,
+          steps: rec.steps.slice(0, 5 + Math.floor((rec.steps.length - 8) / 3)),
+          deliverables: rec.deliverables.map((d, i) => ({
+            ...d, status: i < rec.deliverables.length / 3 ? d.status : "queued", uri: i < rec.deliverables.length / 3 ? d.uri : null,
+          })),
+        }) },
+      { after: 3400, patch: () => ({
+          progress: 65, steps: rec.steps.slice(0, 5 + Math.floor(((rec.steps.length - 8) * 2) / 3)),
+          deliverables: rec.deliverables.map((d, i) => ({
+            ...d, status: i < (rec.deliverables.length * 2) / 3 ? d.status : "generating", uri: i < (rec.deliverables.length * 2) / 3 ? d.uri : null,
+          })),
+        }) },
+      { after: 4400, patch: () => ({ status: "reviewing", progress: 90, deliverables: rec.deliverables, steps: rec.steps.slice(0, -2) }) },
+      { after: 5200, patch: (c) => ({
+          status: rec.status, progress: 100, ads: rec.ads, followUps: rec.followUps, steps: rec.steps,
+          brandScore: rec.brandScore, updatedAt: c.updatedAt,
+        }) },
+    ];
+    stages.forEach(({ after, patch }) =>
+      setTimeout(() => {
+        const cur = campaigns.get(id);
+        if (!cur) return;
+        const next = { ...cur, ...patch(cur) };
+        campaigns.set(id, next);
+        campaignListeners.get(id)?.forEach((fn) => fn(next));
+      }, after)
+    );
   }
 
   private _simulateJob(id: string) {
