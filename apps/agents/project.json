@@ -15,14 +15,14 @@
     "lint": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "ruff check src/",
+        "command": "ruff check src/ tests/ scripts/",
         "cwd": "apps/agents"
       }
     },
     "test": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "pytest src/",
+        "command": "pytest",
         "cwd": "apps/agents"
       }
     }
