@@ -203,6 +203,8 @@ export const PAGE_TITLES: PageTitles = {
   generate: "Generate Video",
   videos: "My Videos",
   storyboard: "Storyboard",
+  brands: "Brands",
+  campaigns: "Campaigns",
   prompts: "Prompt Library",
   models: "Model Library",
   benchmarks: "Benchmarks",

@@ -49,6 +49,8 @@ export type PageId =
   | "generate"
   | "videos"
   | "storyboard"
+  | "brands"
+  | "campaigns"
   | "prompts"
   | "models"
   | "benchmarks"
@@ -57,3 +59,5 @@ export type PageId =
   | "settings";
 
 export type PageTitles = Record<PageId, string>;
+
+export * from "./brand-os";

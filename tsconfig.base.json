@@ -11,6 +11,7 @@
     "target": "ES2017",
     "module": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
