@@ -3,9 +3,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .routers import health, generations
+from .routers import brands, campaigns, generations, health, models
 
-app = FastAPI(title="CineAI Agents", version="0.1.0")
+app = FastAPI(title="CineAI Agents", version="0.2.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -16,3 +16,6 @@ app.add_middleware(
 
 app.include_router(health.router)
 app.include_router(generations.router, prefix="/generations")
+app.include_router(models.router, prefix="/models", tags=["models"])
+app.include_router(brands.router, prefix="/brands", tags=["brands"])
+app.include_router(campaigns.router, prefix="/campaigns", tags=["campaigns"])

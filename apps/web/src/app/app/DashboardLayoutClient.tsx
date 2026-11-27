@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   LayoutDashboard, Wand2, Video, Film, Cpu, Layers,
   Users, BarChart2, CreditCard, Code2, Settings,
-  Search, Bell, Plus, Zap,
+  Search, Bell, Plus, Zap, Palette, Megaphone,
 } from "lucide-react";
 import { NAV, PAGE_TITLES, STUB_PAGES } from "@cineai/mock-data";
 import { Icons, Toast, GenerateModal, CreditBar, CommandPalette, NotificationPanel } from "@cineai/ui";
@@ -18,7 +18,7 @@ const SPRING_SLOW = { type: "spring", stiffness: 200, damping: 28 };
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ICON_MAP: Record<string, React.ComponentType<any>> = {
   dashboard: LayoutDashboard, generate: Wand2, videos: Video,
-  storyboard: Film, models: Cpu, library: Layers,
+  storyboard: Film, brands: Palette, campaigns: Megaphone, models: Cpu, library: Layers,
   team: Users, analytics: BarChart2, billing: CreditCard,
   api: Code2, settings: Settings,
 };
@@ -28,6 +28,8 @@ const ROUTE_MAP: Record<string, string> = {
   generate:  "/app/generate",
   videos:    "/app/videos",
   storyboard:"/app/storyboard",
+  brands:    "/app/brands",
+  campaigns: "/app/campaigns",
   models:    "/app/models",
   settings:  "/app/settings",
 };

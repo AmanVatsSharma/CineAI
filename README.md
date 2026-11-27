@@ -60,6 +60,20 @@ NEXT_PUBLIC_API_URL=http://localhost:3001/api
 
 This flips `@cineai/api-client` from `MockClient` to the `HttpClient` pointing at the NestJS API.
 
+### Brand OS (brands, campaigns, agents)
+
+The **Brands** and **Campaigns** pages run on the Python agents service. In the default demo they replay output recorded from the real pipeline; to run your own briefs:
+
+```bash
+# terminal 1 — agents service on :3002 (needs: pip install -e "apps/agents[dev]")
+nx run agents:dev
+
+# terminal 2 — web, pointed straight at the agents service
+NEXT_PUBLIC_API_MODE=real NEXT_PUBLIC_API_URL=http://localhost:3002 npm run dev
+```
+
+Model providers are stubbed (`stub://` asset URIs), so briefs run end to end without API keys. The Generate page still needs the NestJS API.
+
 ---
 
 ## Repository Structure
@@ -68,7 +82,7 @@ This flips `@cineai/api-client` from `MockClient` to the `HttpClient` pointing a
 apps/
   web/           Next.js 15 App Router — landing + dashboard
   api/           NestJS API (Phase 3, stub)
-  agents/        Python FastAPI AI agents (Phase 4, stub)
+  agents/        Python FastAPI — brand agents, model router, Brand Guardian (providers stubbed)
 libs/
   ui/            Shared React component library
   domain-types/  TypeScript types shared across all apps

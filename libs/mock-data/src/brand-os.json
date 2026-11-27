@@ -1,0 +1,1478 @@
+{
+  "modelCatalog": [
+    {
+      "id": "kling-2-6",
+      "name": "Kling 2.6",
+      "provider": "Kuaishou",
+      "modality": "video",
+      "useCases": [
+        "brand_film",
+        "social_ad",
+        "product_shot"
+      ],
+      "capabilities": [
+        "reference_images",
+        "image_to_video"
+      ],
+      "quality": 96,
+      "speed": 78,
+      "creditCost": 8,
+      "unit": "second",
+      "maxDurationS": 120,
+      "badge": "TOP"
+    },
+    {
+      "id": "veo-3-1",
+      "name": "Veo 3.1",
+      "provider": "Google DeepMind",
+      "modality": "video",
+      "useCases": [
+        "brand_film",
+        "social_ad",
+        "explainer"
+      ],
+      "capabilities": [
+        "native_audio",
+        "image_to_video"
+      ],
+      "quality": 94,
+      "speed": 82,
+      "creditCost": 7,
+      "unit": "second",
+      "maxDurationS": 20,
+      "badge": "NEW"
+    },
+    {
+      "id": "sora-2-pro",
+      "name": "Sora 2 Pro",
+      "provider": "OpenAI",
+      "modality": "video",
+      "useCases": [
+        "brand_film",
+        "product_shot"
+      ],
+      "capabilities": [
+        "native_audio",
+        "physics"
+      ],
+      "quality": 91,
+      "speed": 65,
+      "creditCost": 10,
+      "unit": "second",
+      "maxDurationS": 60,
+      "badge": null
+    },
+    {
+      "id": "runway-gen-4-5",
+      "name": "Runway Gen-4.5",
+      "provider": "Runway ML",
+      "modality": "video",
+      "useCases": [
+        "brand_film",
+        "social_ad"
+      ],
+      "capabilities": [
+        "reference_images",
+        "image_to_video",
+        "style_lock"
+      ],
+      "quality": 93,
+      "speed": 88,
+      "creditCost": 6,
+      "unit": "second",
+      "maxDurationS": 15,
+      "badge": null
+    },
+    {
+      "id": "luma-ray3",
+      "name": "Luma Ray3",
+      "provider": "Luma AI",
+      "modality": "video",
+      "useCases": [
+        "product_shot",
+        "brand_film"
+      ],
+      "capabilities": [
+        "reference_images",
+        "hdr"
+      ],
+      "quality": 90,
+      "speed": 90,
+      "creditCost": 9,
+      "unit": "second",
+      "maxDurationS": 10,
+      "badge": null
+    },
+    {
+      "id": "pika-2-2",
+      "name": "Pika 2.2",
+      "provider": "Pika Labs",
+      "modality": "video",
+      "useCases": [
+        "social_ad",
+        "social_post"
+      ],
+      "capabilities": [
+        "image_to_video"
+      ],
+      "quality": 84,
+      "speed": 95,
+      "creditCost": 5,
+      "unit": "second",
+      "maxDurationS": 8,
+      "badge": "FAST"
+    },
+    {
+      "id": "heygen-avatar-4",
+      "name": "HeyGen Avatar 4",
+      "provider": "HeyGen",
+      "modality": "video",
+      "useCases": [
+        "spokesperson",
+        "explainer",
+        "localization"
+      ],
+      "capabilities": [
+        "lipsync",
+        "voice_clone",
+        "multilingual"
+      ],
+      "quality": 88,
+      "speed": 80,
+      "creditCost": 6,
+      "unit": "second",
+      "maxDurationS": 300,
+      "badge": null
+    },
+    {
+      "id": "flux-1-1-pro",
+      "name": "Flux 1.1 Pro",
+      "provider": "Black Forest Labs",
+      "modality": "image",
+      "useCases": [
+        "brand_film",
+        "product_shot",
+        "social_post"
+      ],
+      "capabilities": [
+        "reference_images",
+        "brand_lora"
+      ],
+      "quality": 93,
+      "speed": 85,
+      "creditCost": 4,
+      "unit": "image",
+      "maxDurationS": null,
+      "badge": "TOP"
+    },
+    {
+      "id": "imagen-4",
+      "name": "Imagen 4",
+      "provider": "Google",
+      "modality": "image",
+      "useCases": [
+        "product_shot",
+        "social_post"
+      ],
+      "capabilities": [
+        "text_in_image"
+      ],
+      "quality": 94,
+      "speed": 80,
+      "creditCost": 5,
+      "unit": "image",
+      "maxDurationS": null,
+      "badge": null
+    },
+    {
+      "id": "ideogram-3",
+      "name": "Ideogram 3",
+      "provider": "Ideogram",
+      "modality": "image",
+      "useCases": [
+        "social_ad",
+        "logo_design"
+      ],
+      "capabilities": [
+        "text_in_image",
+        "style_lock"
+      ],
+      "quality": 91,
+      "speed": 82,
+      "creditCost": 4,
+      "unit": "image",
+      "maxDurationS": null,
+      "badge": null
+    },
+    {
+      "id": "recraft-v3",
+      "name": "Recraft V3",
+      "provider": "Recraft",
+      "modality": "image",
+      "useCases": [
+        "logo_design",
+        "social_post"
+      ],
+      "capabilities": [
+        "text_in_image",
+        "vector",
+        "style_lock"
+      ],
+      "quality": 90,
+      "speed": 78,
+      "creditCost": 5,
+      "unit": "image",
+      "maxDurationS": null,
+      "badge": null
+    },
+    {
+      "id": "gpt-image-1",
+      "name": "GPT Image 1",
+      "provider": "OpenAI",
+      "modality": "image",
+      "useCases": [
+        "social_ad",
+        "social_post"
+      ],
+      "capabilities": [
+        "text_in_image",
+        "reference_images",
+        "inpainting"
+      ],
+      "quality": 92,
+      "speed": 70,
+      "creditCost": 6,
+      "unit": "image",
+      "maxDurationS": null,
+      "badge": null
+    },
+    {
+      "id": "elevenlabs-v3",
+      "name": "ElevenLabs v3",
+      "provider": "ElevenLabs",
+      "modality": "voice",
+      "useCases": [
+        "voiceover",
+        "explainer",
+        "localization"
+      ],
+      "capabilities": [
+        "voice_clone",
+        "multilingual",
+        "emotion"
+      ],
+      "quality": 96,
+      "speed": 80,
+      "creditCost": 3,
+      "unit": "1k_chars",
+      "maxDurationS": null,
+      "badge": "TOP"
+    },
+    {
+      "id": "openai-tts-hd",
+      "name": "OpenAI TTS HD",
+      "provider": "OpenAI",
+      "modality": "voice",
+      "useCases": [
+        "voiceover",
+        "explainer"
+      ],
+      "capabilities": [
+        "multilingual"
+      ],
+      "quality": 86,
+      "speed": 92,
+      "creditCost": 1,
+      "unit": "1k_chars",
+      "maxDurationS": null,
+      "badge": null
+    },
+    {
+      "id": "suno-v5",
+      "name": "Suno v5",
+      "provider": "Suno",
+      "modality": "music",
+      "useCases": [
+        "jingle",
+        "background_music"
+      ],
+      "capabilities": [
+        "vocals",
+        "lyrics"
+      ],
+      "quality": 92,
+      "speed": 75,
+      "creditCost": 12,
+      "unit": "track",
+      "maxDurationS": null,
+      "badge": null
+    },
+    {
+      "id": "udio-v2",
+      "name": "Udio v2",
+      "provider": "Udio",
+      "modality": "music",
+      "useCases": [
+        "jingle",
+        "background_music"
+      ],
+      "capabilities": [
+        "vocals",
+        "lyrics",
+        "stems"
+      ],
+      "quality": 90,
+      "speed": 70,
+      "creditCost": 12,
+      "unit": "track",
+      "maxDurationS": null,
+      "badge": null
+    },
+    {
+      "id": "stable-audio-2-5",
+      "name": "Stable Audio 2.5",
+      "provider": "Stability AI",
+      "modality": "music",
+      "useCases": [
+        "background_music",
+        "ambient"
+      ],
+      "capabilities": [
+        "instrumental",
+        "tempo_control"
+      ],
+      "quality": 84,
+      "speed": 92,
+      "creditCost": 4,
+      "unit": "track",
+      "maxDurationS": null,
+      "badge": null
+    },
+    {
+      "id": "elevenlabs-sfx",
+      "name": "ElevenLabs SFX",
+      "provider": "ElevenLabs",
+      "modality": "sfx",
+      "useCases": [
+        "ambient"
+      ],
+      "capabilities": [
+        "loopable"
+      ],
+      "quality": 90,
+      "speed": 90,
+      "creditCost": 2,
+      "unit": "clip",
+      "maxDurationS": null,
+      "badge": null
+    },
+    {
+      "id": "stable-audio-sfx",
+      "name": "Stable Audio SFX",
+      "provider": "Stability AI",
+      "modality": "sfx",
+      "useCases": [
+        "ambient"
+      ],
+      "capabilities": [
+        "loopable"
+      ],
+      "quality": 82,
+      "speed": 94,
+      "creditCost": 1,
+      "unit": "clip",
+      "maxDurationS": null,
+      "badge": null
+    },
+    {
+      "id": "claude-sonnet",
+      "name": "Claude Sonnet",
+      "provider": "Anthropic",
+      "modality": "copy",
+      "useCases": [
+        "script",
+        "ad_copy",
+        "localization"
+      ],
+      "capabilities": [
+        "long_context",
+        "structured_output",
+        "brand_voice"
+      ],
+      "quality": 95,
+      "speed": 78,
+      "creditCost": 3,
+      "unit": "request",
+      "maxDurationS": null,
+      "badge": "TOP"
+    },
+    {
+      "id": "claude-haiku",
+      "name": "Claude Haiku",
+      "provider": "Anthropic",
+      "modality": "copy",
+      "useCases": [
+        "ad_copy",
+        "script"
+      ],
+      "capabilities": [
+        "structured_output",
+        "brand_voice"
+      ],
+      "quality": 86,
+      "speed": 96,
+      "creditCost": 1,
+      "unit": "request",
+      "maxDurationS": null,
+      "badge": null
+    }
+  ],
+  "brands": [
+    {
+      "name": "Vedpragya",
+      "tagline": "Ancient wisdom. Modern craft.",
+      "industry": "Knowledge & media",
+      "audience": "curious professionals who want depth over noise",
+      "mission": "Make timeless wisdom practical for modern life and work.",
+      "voice": {
+        "persona": "A calm guide who explains with clarity and never hypes.",
+        "tone": [
+          "grounded",
+          "insightful",
+          "warm"
+        ],
+        "dos": [
+          "Lead with the insight",
+          "Use plain, precise language",
+          "Invite, don't pressure"
+        ],
+        "donts": [
+          "Overpromise outcomes",
+          "Use hype or urgency tricks",
+          "Mock other traditions"
+        ],
+        "bannedWords": [
+          "guaranteed",
+          "miracle",
+          "hack",
+          "cheap",
+          "get rich"
+        ],
+        "preferredTerms": {
+          "users": "learners",
+          "buy now": "begin today"
+        },
+        "disclaimers": [
+          {
+            "triggerTerms": [
+              "results",
+              "income",
+              "earn"
+            ],
+            "text": "Individual results vary."
+          }
+        ],
+        "ctaPhrases": [
+          "Begin today",
+          "Start learning",
+          "Explore"
+        ],
+        "maxExclamations": 1
+      },
+      "visual": {
+        "palette": {
+          "primary": "#1E1B4B",
+          "secondary": "#F59E0B",
+          "accent": "#D4A017",
+          "neutrals": [
+            "#FFF8E7",
+            "#2B2B2B"
+          ],
+          "forbidden": [
+            "#00FF00"
+          ]
+        },
+        "typography": {
+          "headingFont": "Cormorant Garamond",
+          "bodyFont": "Inter"
+        },
+        "logo": {
+          "clearSpacePct": 12,
+          "minWidthPx": 64,
+          "allowedBackgrounds": [
+            "#1E1B4B",
+            "#FFF8E7"
+          ]
+        },
+        "imageryStyle": "warm cinematic realism with rich indigo shadows and golden highlights",
+        "lighting": "soft golden-hour light",
+        "avoidVisuals": [
+          "neon",
+          "stock handshake",
+          "clip art"
+        ]
+      },
+      "audio": {
+        "voiceStyle": "warm, unhurried baritone narrator with clear diction",
+        "musicMood": [
+          "contemplative",
+          "uplifting",
+          "organic"
+        ],
+        "bpmMin": 70,
+        "bpmMax": 95,
+        "sonicLogo": "a single resonant temple-bell strike"
+      },
+      "channels": [
+        {
+          "id": "instagram_reel",
+          "label": "Instagram Reel",
+          "aspectRatio": "9:16",
+          "maxDurationS": 30,
+          "maxHeadlineChars": 40,
+          "maxBodyChars": 125,
+          "requiresCta": true
+        },
+        {
+          "id": "youtube_preroll",
+          "label": "YouTube Pre-roll",
+          "aspectRatio": "16:9",
+          "maxDurationS": 30,
+          "maxHeadlineChars": 60,
+          "maxBodyChars": 150,
+          "requiresCta": true
+        },
+        {
+          "id": "linkedin_feed",
+          "label": "LinkedIn Feed",
+          "aspectRatio": "1:1",
+          "maxDurationS": 45,
+          "maxHeadlineChars": 70,
+          "maxBodyChars": 200,
+          "requiresCta": true
+        }
+      ],
+      "competitors": [],
+      "sample": true,
+      "id": "vedpragya"
+    },
+    {
+      "name": "Lumen Skin",
+      "tagline": "Light, on your terms.",
+      "industry": "Skincare (sample brand — regulated claims)",
+      "audience": "skincare-conscious adults who read ingredient labels",
+      "mission": "Honest, dermatologist-informed skincare without the noise.",
+      "voice": {
+        "persona": "A knowledgeable friend who explains the science without overselling it.",
+        "tone": [
+          "clear",
+          "reassuring",
+          "confident"
+        ],
+        "dos": [
+          "Cite the study behind any claim",
+          "Keep claims modest and specific"
+        ],
+        "donts": [
+          "Make medical claims",
+          "Shame skin conditions"
+        ],
+        "bannedWords": [
+          "cure",
+          "miracle",
+          "guaranteed",
+          "anti-aging"
+        ],
+        "preferredTerms": {
+          "wrinkles": "fine lines"
+        },
+        "disclaimers": [
+          {
+            "triggerTerms": [
+              "clinically",
+              "dermatologist",
+              "visibly",
+              "results"
+            ],
+            "text": "*Based on a consumer study; individual results may vary."
+          }
+        ],
+        "ctaPhrases": [
+          "Shop now",
+          "Try it today"
+        ],
+        "maxExclamations": 1
+      },
+      "visual": {
+        "palette": {
+          "primary": "#0F766E",
+          "secondary": "#F5F5F4",
+          "accent": "#F4A261",
+          "neutrals": [
+            "#1C1917"
+          ],
+          "forbidden": [
+            "#FF00FF"
+          ]
+        },
+        "typography": {
+          "headingFont": "DM Serif Display",
+          "bodyFont": "DM Sans"
+        },
+        "logo": {
+          "clearSpacePct": 10,
+          "minWidthPx": 48,
+          "allowedBackgrounds": []
+        },
+        "imageryStyle": "clean, bright editorial beauty photography with natural skin texture",
+        "lighting": "diffused daylight, no harsh shadows",
+        "avoidVisuals": [
+          "before and after",
+          "airbrushed skin",
+          "syringe"
+        ]
+      },
+      "audio": {
+        "voiceStyle": "friendly, reassuring female voice, conversational pace",
+        "musicMood": [
+          "airy",
+          "optimistic",
+          "minimal"
+        ],
+        "bpmMin": 90,
+        "bpmMax": 110,
+        "sonicLogo": "a soft two-note chime"
+      },
+      "channels": [
+        {
+          "id": "instagram_reel",
+          "label": "Instagram Reel",
+          "aspectRatio": "9:16",
+          "maxDurationS": 30,
+          "maxHeadlineChars": 40,
+          "maxBodyChars": 125,
+          "requiresCta": true
+        },
+        {
+          "id": "youtube_preroll",
+          "label": "YouTube Pre-roll",
+          "aspectRatio": "16:9",
+          "maxDurationS": 30,
+          "maxHeadlineChars": 60,
+          "maxBodyChars": 150,
+          "requiresCta": true
+        },
+        {
+          "id": "linkedin_feed",
+          "label": "LinkedIn Feed",
+          "aspectRatio": "1:1",
+          "maxDurationS": 45,
+          "maxHeadlineChars": 70,
+          "maxBodyChars": 200,
+          "requiresCta": true
+        }
+      ],
+      "competitors": [
+        "Dermalux"
+      ],
+      "sample": true,
+      "id": "lumen-skin"
+    }
+  ],
+  "sampleCampaign": {
+    "id": "cmp-sample",
+    "brandId": "vedpragya",
+    "brief": {
+      "title": "Foundations course — spring launch",
+      "objective": "launch",
+      "product": "the Vedpragya Foundations course",
+      "keyMessage": "A guaranteed path to learning timeless principles, with results you can measure.",
+      "cta": "Buy now",
+      "audience": null,
+      "totalDurationS": 45,
+      "channels": [
+        "instagram_reel",
+        "linkedin_feed"
+      ],
+      "modalities": [
+        "copy",
+        "voice",
+        "image",
+        "video",
+        "music",
+        "sfx"
+      ],
+      "priority": "balanced",
+      "budgetCredits": null
+    },
+    "status": "ready",
+    "progress": 100,
+    "scenes": [
+      {
+        "index": 1,
+        "beat": "hook",
+        "title": "Hook",
+        "visual": "A scroll-stopping opening that places curious professionals who want depth over noise in the moment before the Vedpragya Foundations course; warm cinematic realism with rich indigo shadows and golden highlights.",
+        "voiceover": "Introducing the Vedpragya Foundations course.",
+        "onScreenText": "",
+        "durationS": 9,
+        "camera": "slow push-in",
+        "mood": "intriguing"
+      },
+      {
+        "index": 2,
+        "beat": "problem",
+        "title": "The gap",
+        "visual": "A quiet, relatable moment showing what is missing for curious professionals who want depth over noise; warm cinematic realism with rich indigo shadows and golden highlights.",
+        "voiceover": "Most options leave curious professionals who want depth over noise guessing.",
+        "onScreenText": "",
+        "durationS": 9,
+        "camera": "handheld, shallow depth of field",
+        "mood": "tense, restrained"
+      },
+      {
+        "index": 3,
+        "beat": "solution",
+        "title": "The answer",
+        "visual": "Hero shot of the Vedpragya Foundations course in natural use, framed to feel effortless; warm cinematic realism with rich indigo shadows and golden highlights.",
+        "voiceover": "A path to learning timeless principles, with results you can measure.",
+        "onScreenText": "the Vedpragya Foundations course",
+        "durationS": 13,
+        "camera": "smooth hero orbit",
+        "mood": "confident, uplifting"
+      },
+      {
+        "index": 4,
+        "beat": "proof",
+        "title": "Proof",
+        "visual": "Real-use demonstration of the Vedpragya Foundations course; warm cinematic realism with rich indigo shadows and golden highlights.",
+        "voiceover": "See it in action.",
+        "onScreenText": "",
+        "durationS": 9,
+        "camera": "locked-off medium shot",
+        "mood": "authentic, grounded"
+      },
+      {
+        "index": 5,
+        "beat": "cta",
+        "title": "Call to action",
+        "visual": "End card with the Vedpragya logo lockup on a brand-colour background, respecting logo clear space; warm cinematic realism with rich indigo shadows and golden highlights.",
+        "voiceover": "Begin today. Individual results vary.",
+        "onScreenText": "Begin today",
+        "durationS": 5,
+        "camera": "static end card, gentle fade",
+        "mood": "calm, inviting"
+      }
+    ],
+    "deliverables": [
+      {
+        "id": "d-1",
+        "sceneIndex": 1,
+        "modality": "copy",
+        "agent": "scriptwriter",
+        "modelId": "claude-haiku",
+        "modelName": "Claude Haiku",
+        "prompt": "Write hook copy in the Vedpragya voice.",
+        "negativePrompt": null,
+        "text": "Introducing the Vedpragya Foundations course.",
+        "status": "done",
+        "uri": "stub://copy/claude-haiku/3d53275cad.txt",
+        "credits": 1,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-2",
+        "sceneIndex": 2,
+        "modality": "copy",
+        "agent": "scriptwriter",
+        "modelId": "claude-haiku",
+        "modelName": "Claude Haiku",
+        "prompt": "Write problem copy in the Vedpragya voice.",
+        "negativePrompt": null,
+        "text": "Most options leave curious professionals who want depth over noise guessing.",
+        "status": "done",
+        "uri": "stub://copy/claude-haiku/fef26cfa7b.txt",
+        "credits": 1,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-3",
+        "sceneIndex": 3,
+        "modality": "copy",
+        "agent": "scriptwriter",
+        "modelId": "claude-haiku",
+        "modelName": "Claude Haiku",
+        "prompt": "Write solution copy in the Vedpragya voice.",
+        "negativePrompt": null,
+        "text": "A path to learning timeless principles, with results you can measure.",
+        "status": "done",
+        "uri": "stub://copy/claude-haiku/77ebfee601.txt",
+        "credits": 1,
+        "revisions": 1,
+        "brandScore": 92,
+        "findings": [
+          {
+            "code": "auto_removed",
+            "severity": "warning",
+            "message": "\"guaranteed\" was removed automatically; check the sentence still reads well.",
+            "excerpt": "guaranteed",
+            "suggestion": "Proofread and reword if needed."
+          }
+        ]
+      },
+      {
+        "id": "d-4",
+        "sceneIndex": 4,
+        "modality": "copy",
+        "agent": "scriptwriter",
+        "modelId": "claude-haiku",
+        "modelName": "Claude Haiku",
+        "prompt": "Write proof copy in the Vedpragya voice.",
+        "negativePrompt": null,
+        "text": "See it in action.",
+        "status": "done",
+        "uri": "stub://copy/claude-haiku/30b0cd504b.txt",
+        "credits": 1,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-5",
+        "sceneIndex": 5,
+        "modality": "copy",
+        "agent": "scriptwriter",
+        "modelId": "claude-haiku",
+        "modelName": "Claude Haiku",
+        "prompt": "Write cta copy in the Vedpragya voice.",
+        "negativePrompt": null,
+        "text": "Begin today. Individual results vary.",
+        "status": "done",
+        "uri": "stub://copy/claude-haiku/4a6e24684b.txt",
+        "credits": 1,
+        "revisions": 2,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-6",
+        "sceneIndex": 1,
+        "modality": "voice",
+        "agent": "audio_producer",
+        "modelId": "openai-tts-hd",
+        "modelName": "OpenAI TTS HD",
+        "prompt": "warm, unhurried baritone narrator with clear diction. Mood: intriguing.",
+        "negativePrompt": null,
+        "text": "Introducing the Vedpragya Foundations course.",
+        "status": "done",
+        "uri": "stub://voice/openai-tts-hd/4bfb9d8979.mp3",
+        "credits": 1,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-7",
+        "sceneIndex": 2,
+        "modality": "voice",
+        "agent": "audio_producer",
+        "modelId": "openai-tts-hd",
+        "modelName": "OpenAI TTS HD",
+        "prompt": "warm, unhurried baritone narrator with clear diction. Mood: tense, restrained.",
+        "negativePrompt": null,
+        "text": "Most options leave curious professionals who want depth over noise guessing.",
+        "status": "done",
+        "uri": "stub://voice/openai-tts-hd/59ce133200.mp3",
+        "credits": 1,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-8",
+        "sceneIndex": 3,
+        "modality": "voice",
+        "agent": "audio_producer",
+        "modelId": "openai-tts-hd",
+        "modelName": "OpenAI TTS HD",
+        "prompt": "warm, unhurried baritone narrator with clear diction. Mood: confident, uplifting.",
+        "negativePrompt": null,
+        "text": "A path to learning timeless principles, with results you can measure.",
+        "status": "done",
+        "uri": "stub://voice/openai-tts-hd/13a6ce79f1.mp3",
+        "credits": 1,
+        "revisions": 0,
+        "brandScore": 92,
+        "findings": [
+          {
+            "code": "auto_removed",
+            "severity": "warning",
+            "message": "\"guaranteed\" was removed automatically; check the sentence still reads well.",
+            "excerpt": "guaranteed",
+            "suggestion": "Proofread and reword if needed."
+          }
+        ]
+      },
+      {
+        "id": "d-9",
+        "sceneIndex": 4,
+        "modality": "voice",
+        "agent": "audio_producer",
+        "modelId": "openai-tts-hd",
+        "modelName": "OpenAI TTS HD",
+        "prompt": "warm, unhurried baritone narrator with clear diction. Mood: authentic, grounded.",
+        "negativePrompt": null,
+        "text": "See it in action.",
+        "status": "done",
+        "uri": "stub://voice/openai-tts-hd/15e23d58a5.mp3",
+        "credits": 1,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-10",
+        "sceneIndex": 5,
+        "modality": "voice",
+        "agent": "audio_producer",
+        "modelId": "openai-tts-hd",
+        "modelName": "OpenAI TTS HD",
+        "prompt": "warm, unhurried baritone narrator with clear diction. Mood: calm, inviting.",
+        "negativePrompt": null,
+        "text": "Begin today. Individual results vary.",
+        "status": "done",
+        "uri": "stub://voice/openai-tts-hd/1713928ddb.mp3",
+        "credits": 1,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-11",
+        "sceneIndex": 1,
+        "modality": "image",
+        "agent": "image_artist",
+        "modelId": "flux-1-1-pro",
+        "modelName": "Flux 1.1 Pro",
+        "prompt": "A scroll-stopping opening that places curious professionals who want depth over noise in the moment before the Vedpragya Foundations course; warm cinematic realism with rich indigo shadows and golden highlights. Lighting: soft golden-hour light. Brand palette #1E1B4B, #F59E0B, accent #D4A017. Mood: intriguing. Camera: slow push-in.",
+        "negativePrompt": "neon, stock handshake, clip art, #00FF00, watermark, distorted text, off-brand colours",
+        "text": null,
+        "status": "done",
+        "uri": "stub://image/flux-1-1-pro/9f14d533ff.png",
+        "credits": 4,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-12",
+        "sceneIndex": 2,
+        "modality": "image",
+        "agent": "image_artist",
+        "modelId": "flux-1-1-pro",
+        "modelName": "Flux 1.1 Pro",
+        "prompt": "A quiet, relatable moment showing what is missing for curious professionals who want depth over noise; warm cinematic realism with rich indigo shadows and golden highlights. Lighting: soft golden-hour light. Brand palette #1E1B4B, #F59E0B, accent #D4A017. Mood: tense, restrained. Camera: handheld, shallow depth of field.",
+        "negativePrompt": "neon, stock handshake, clip art, #00FF00, watermark, distorted text, off-brand colours",
+        "text": null,
+        "status": "done",
+        "uri": "stub://image/flux-1-1-pro/259e6ce8b4.png",
+        "credits": 4,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-13",
+        "sceneIndex": 3,
+        "modality": "image",
+        "agent": "image_artist",
+        "modelId": "flux-1-1-pro",
+        "modelName": "Flux 1.1 Pro",
+        "prompt": "Hero shot of the Vedpragya Foundations course in natural use, framed to feel effortless; warm cinematic realism with rich indigo shadows and golden highlights. Lighting: soft golden-hour light. Brand palette #1E1B4B, #F59E0B, accent #D4A017. Mood: confident, uplifting. Camera: smooth hero orbit.",
+        "negativePrompt": "neon, stock handshake, clip art, #00FF00, watermark, distorted text, off-brand colours",
+        "text": null,
+        "status": "done",
+        "uri": "stub://image/flux-1-1-pro/f4e40383c9.png",
+        "credits": 4,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-14",
+        "sceneIndex": 4,
+        "modality": "image",
+        "agent": "image_artist",
+        "modelId": "flux-1-1-pro",
+        "modelName": "Flux 1.1 Pro",
+        "prompt": "Real-use demonstration of the Vedpragya Foundations course; warm cinematic realism with rich indigo shadows and golden highlights. Lighting: soft golden-hour light. Brand palette #1E1B4B, #F59E0B, accent #D4A017. Mood: authentic, grounded. Camera: locked-off medium shot.",
+        "negativePrompt": "neon, stock handshake, clip art, #00FF00, watermark, distorted text, off-brand colours",
+        "text": null,
+        "status": "done",
+        "uri": "stub://image/flux-1-1-pro/1ad719310f.png",
+        "credits": 4,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-15",
+        "sceneIndex": 5,
+        "modality": "image",
+        "agent": "image_artist",
+        "modelId": "ideogram-3",
+        "modelName": "Ideogram 3",
+        "prompt": "End card with the Vedpragya logo lockup on a brand-colour background, respecting logo clear space; warm cinematic realism with rich indigo shadows and golden highlights. Lighting: soft golden-hour light. Brand palette #1E1B4B, #F59E0B, accent #D4A017. Mood: calm, inviting. Camera: static end card, gentle fade.",
+        "negativePrompt": "neon, stock handshake, clip art, #00FF00, watermark, distorted text, off-brand colours",
+        "text": null,
+        "status": "done",
+        "uri": "stub://image/ideogram-3/ac2d9d5d24.png",
+        "credits": 4,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-16",
+        "sceneIndex": 1,
+        "modality": "video",
+        "agent": "video_producer",
+        "modelId": "runway-gen-4-5",
+        "modelName": "Runway Gen-4.5",
+        "prompt": "A scroll-stopping opening that places curious professionals who want depth over noise in the moment before the Vedpragya Foundations course; warm cinematic realism with rich indigo shadows and golden highlights. Lighting: soft golden-hour light. Brand palette #1E1B4B, #F59E0B, accent #D4A017. Mood: intriguing. Camera: slow push-in. Duration 9s.",
+        "negativePrompt": "neon, stock handshake, clip art, #00FF00, watermark, distorted text, off-brand colours",
+        "text": null,
+        "status": "done",
+        "uri": "stub://video/runway-gen-4-5/3ab84acc84.mp4",
+        "credits": 54,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-17",
+        "sceneIndex": 2,
+        "modality": "video",
+        "agent": "video_producer",
+        "modelId": "runway-gen-4-5",
+        "modelName": "Runway Gen-4.5",
+        "prompt": "A quiet, relatable moment showing what is missing for curious professionals who want depth over noise; warm cinematic realism with rich indigo shadows and golden highlights. Lighting: soft golden-hour light. Brand palette #1E1B4B, #F59E0B, accent #D4A017. Mood: tense, restrained. Camera: handheld, shallow depth of field. Duration 9s.",
+        "negativePrompt": "neon, stock handshake, clip art, #00FF00, watermark, distorted text, off-brand colours",
+        "text": null,
+        "status": "done",
+        "uri": "stub://video/runway-gen-4-5/c7a8566841.mp4",
+        "credits": 54,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-18",
+        "sceneIndex": 3,
+        "modality": "video",
+        "agent": "video_producer",
+        "modelId": "runway-gen-4-5",
+        "modelName": "Runway Gen-4.5",
+        "prompt": "Hero shot of the Vedpragya Foundations course in natural use, framed to feel effortless; warm cinematic realism with rich indigo shadows and golden highlights. Lighting: soft golden-hour light. Brand palette #1E1B4B, #F59E0B, accent #D4A017. Mood: confident, uplifting. Camera: smooth hero orbit. Duration 13s.",
+        "negativePrompt": "neon, stock handshake, clip art, #00FF00, watermark, distorted text, off-brand colours",
+        "text": null,
+        "status": "done",
+        "uri": "stub://video/runway-gen-4-5/4810c9e03c.mp4",
+        "credits": 78,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-19",
+        "sceneIndex": 4,
+        "modality": "video",
+        "agent": "video_producer",
+        "modelId": "runway-gen-4-5",
+        "modelName": "Runway Gen-4.5",
+        "prompt": "Real-use demonstration of the Vedpragya Foundations course; warm cinematic realism with rich indigo shadows and golden highlights. Lighting: soft golden-hour light. Brand palette #1E1B4B, #F59E0B, accent #D4A017. Mood: authentic, grounded. Camera: locked-off medium shot. Duration 9s.",
+        "negativePrompt": "neon, stock handshake, clip art, #00FF00, watermark, distorted text, off-brand colours",
+        "text": null,
+        "status": "done",
+        "uri": "stub://video/runway-gen-4-5/2c1362a52f.mp4",
+        "credits": 54,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-20",
+        "sceneIndex": 5,
+        "modality": "video",
+        "agent": "video_producer",
+        "modelId": "runway-gen-4-5",
+        "modelName": "Runway Gen-4.5",
+        "prompt": "End card with the Vedpragya logo lockup on a brand-colour background, respecting logo clear space; warm cinematic realism with rich indigo shadows and golden highlights. Lighting: soft golden-hour light. Brand palette #1E1B4B, #F59E0B, accent #D4A017. Mood: calm, inviting. Camera: static end card, gentle fade. Duration 5s.",
+        "negativePrompt": "neon, stock handshake, clip art, #00FF00, watermark, distorted text, off-brand colours",
+        "text": null,
+        "status": "done",
+        "uri": "stub://video/runway-gen-4-5/d07738a5f6.mp4",
+        "credits": 30,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-21",
+        "sceneIndex": null,
+        "modality": "music",
+        "agent": "audio_producer",
+        "modelId": "stable-audio-2-5",
+        "modelName": "Stable Audio 2.5",
+        "prompt": "contemplative, uplifting, organic instrumental, 70-95 BPM, 45s, building toward the final call to action. End on a single resonant temple-bell strike.",
+        "negativePrompt": null,
+        "text": null,
+        "status": "done",
+        "uri": "stub://music/stable-audio-2-5/b85fa84150.mp3",
+        "credits": 4,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      },
+      {
+        "id": "d-22",
+        "sceneIndex": null,
+        "modality": "sfx",
+        "agent": "audio_producer",
+        "modelId": "stable-audio-sfx",
+        "modelName": "Stable Audio SFX",
+        "prompt": "Subtle ambient bed with soft transition stings matching warm cinematic realism with rich indigo shadows and golden highlights; 45s, no voices.",
+        "negativePrompt": null,
+        "text": null,
+        "status": "done",
+        "uri": "stub://sfx/stable-audio-sfx/6685ebe8d4.wav",
+        "credits": 1,
+        "revisions": 0,
+        "brandScore": 100,
+        "findings": []
+      }
+    ],
+    "ads": [
+      {
+        "id": "ad-1",
+        "channel": "instagram_reel",
+        "channelLabel": "Instagram Reel",
+        "aspectRatio": "9:16",
+        "durationS": 23,
+        "sceneIndexes": [
+          1,
+          2,
+          5
+        ],
+        "headline": "A path to learning timeless…",
+        "body": "The Vedpragya Foundations course. A path to learning timeless principles, with results you can… Individual results vary.",
+        "cta": "Begin today",
+        "revisions": 3,
+        "brandScore": 95,
+        "passed": true,
+        "findings": [
+          {
+            "code": "auto_removed",
+            "severity": "warning",
+            "message": "\"guaranteed\" was removed automatically; check the sentence still reads well.",
+            "excerpt": "guaranteed",
+            "suggestion": "Proofread and reword if needed."
+          }
+        ]
+      },
+      {
+        "id": "ad-2",
+        "channel": "linkedin_feed",
+        "channelLabel": "LinkedIn Feed",
+        "aspectRatio": "1:1",
+        "durationS": 45,
+        "sceneIndexes": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "headline": "A path to learning timeless principles, with results you can measure.",
+        "body": "The Vedpragya Foundations course. A path to learning timeless principles, with results you can measure. Individual results vary.",
+        "cta": "Begin today",
+        "revisions": 3,
+        "brandScore": 95,
+        "passed": true,
+        "findings": [
+          {
+            "code": "auto_removed",
+            "severity": "warning",
+            "message": "\"guaranteed\" was removed automatically; check the sentence still reads well.",
+            "excerpt": "guaranteed",
+            "suggestion": "Proofread and reword if needed."
+          }
+        ]
+      }
+    ],
+    "followUps": [
+      {
+        "id": "fu-1",
+        "title": "Proofread auto-edited copy",
+        "detail": "The Brand Guardian removed banned words in scenes [3] and Instagram Reel, LinkedIn Feed ad copy. Confirm each line still reads correctly.",
+        "owner": "human",
+        "dueAt": "2026-01-13T09:00:00+00:00",
+        "status": "open",
+        "related": null
+      },
+      {
+        "id": "fu-2",
+        "title": "Replace proof scene with verified evidence",
+        "detail": "The proof scene is a stand-in. Add a real testimonial or statistic you can substantiate.",
+        "owner": "human",
+        "dueAt": "2026-01-13T09:00:00+00:00",
+        "status": "open",
+        "related": null
+      },
+      {
+        "id": "fu-3",
+        "title": "Brand-owner approval",
+        "detail": "Review the full campaign against the brand book and approve for publishing.",
+        "owner": "human",
+        "dueAt": "2026-01-14T09:00:00+00:00",
+        "status": "open",
+        "related": null
+      },
+      {
+        "id": "fu-4",
+        "title": "Schedule Instagram Reel posts",
+        "detail": "Queue the approved cut with channel-appropriate captions.",
+        "owner": "agent",
+        "dueAt": "2026-01-15T09:00:00+00:00",
+        "status": "open",
+        "related": null
+      },
+      {
+        "id": "fu-5",
+        "title": "Schedule LinkedIn Feed posts",
+        "detail": "Queue the approved cut with channel-appropriate captions.",
+        "owner": "agent",
+        "dueAt": "2026-01-15T09:00:00+00:00",
+        "status": "open",
+        "related": null
+      },
+      {
+        "id": "fu-6",
+        "title": "48-hour performance check",
+        "detail": "Compare hook retention and click-through across channels; flag weak variants.",
+        "owner": "agent",
+        "dueAt": "2026-01-17T09:00:00+00:00",
+        "status": "open",
+        "related": null
+      },
+      {
+        "id": "fu-7",
+        "title": "A/B test the hook",
+        "detail": "Generate two alternative hook scenes and split-test against the winner.",
+        "owner": "agent",
+        "dueAt": "2026-01-17T09:00:00+00:00",
+        "status": "open",
+        "related": null
+      },
+      {
+        "id": "fu-8",
+        "title": "Creative refresh",
+        "detail": "Audience fatigue typically sets in within two weeks; draft a refreshed cut.",
+        "owner": "agent",
+        "dueAt": "2026-01-29T09:00:00+00:00",
+        "status": "open",
+        "related": null
+      }
+    ],
+    "steps": [
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "creative_director",
+        "action": "planned scenes",
+        "detail": "5 scenes · 45s · hook → problem → solution → proof → cta"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "brand_guardian",
+        "action": "revised scene 3 copy",
+        "detail": "1 revision round(s) to meet voice guide"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "brand_guardian",
+        "action": "revised scene 5 copy",
+        "detail": "2 revision round(s) to meet voice guide"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "brand_guardian",
+        "action": "added required disclaimer",
+        "detail": "Appended to scene 5: \"Individual results vary.\""
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "orchestrator",
+        "action": "routed models",
+        "detail": "22 deliverables (copy×5, voice×5, image×5, video×5, music×1, sfx×1) · 305 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "scriptwriter",
+        "action": "generated copy",
+        "detail": "scene 1 · Claude Haiku · 1 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "scriptwriter",
+        "action": "generated copy",
+        "detail": "scene 2 · Claude Haiku · 1 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "scriptwriter",
+        "action": "generated copy",
+        "detail": "scene 3 · Claude Haiku · 1 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "scriptwriter",
+        "action": "generated copy",
+        "detail": "scene 4 · Claude Haiku · 1 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "scriptwriter",
+        "action": "generated copy",
+        "detail": "scene 5 · Claude Haiku · 1 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "audio_producer",
+        "action": "generated voice",
+        "detail": "scene 1 · OpenAI TTS HD · 1 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "audio_producer",
+        "action": "generated voice",
+        "detail": "scene 2 · OpenAI TTS HD · 1 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "audio_producer",
+        "action": "generated voice",
+        "detail": "scene 3 · OpenAI TTS HD · 1 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "audio_producer",
+        "action": "generated voice",
+        "detail": "scene 4 · OpenAI TTS HD · 1 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "audio_producer",
+        "action": "generated voice",
+        "detail": "scene 5 · OpenAI TTS HD · 1 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "image_artist",
+        "action": "generated image",
+        "detail": "scene 1 · Flux 1.1 Pro · 4 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "image_artist",
+        "action": "generated image",
+        "detail": "scene 2 · Flux 1.1 Pro · 4 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "image_artist",
+        "action": "generated image",
+        "detail": "scene 3 · Flux 1.1 Pro · 4 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "image_artist",
+        "action": "generated image",
+        "detail": "scene 4 · Flux 1.1 Pro · 4 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "image_artist",
+        "action": "generated image",
+        "detail": "scene 5 · Ideogram 3 · 4 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "video_producer",
+        "action": "generated video",
+        "detail": "scene 1 · Runway Gen-4.5 · 54 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "video_producer",
+        "action": "generated video",
+        "detail": "scene 2 · Runway Gen-4.5 · 54 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "video_producer",
+        "action": "generated video",
+        "detail": "scene 3 · Runway Gen-4.5 · 78 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "video_producer",
+        "action": "generated video",
+        "detail": "scene 4 · Runway Gen-4.5 · 54 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "video_producer",
+        "action": "generated video",
+        "detail": "scene 5 · Runway Gen-4.5 · 30 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "audio_producer",
+        "action": "generated music",
+        "detail": "campaign · Stable Audio 2.5 · 4 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "audio_producer",
+        "action": "generated sfx",
+        "detail": "campaign · Stable Audio SFX · 1 credits"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "ad_strategist",
+        "action": "cut Instagram Reel variant",
+        "detail": "23s · scenes [1, 2, 5] · brand score 95"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "ad_strategist",
+        "action": "cut LinkedIn Feed variant",
+        "detail": "45s · scenes [1, 2, 3, 4, 5] · brand score 95"
+      },
+      {
+        "at": "2026-01-12T09:00:00Z",
+        "agent": "follow_up",
+        "action": "scheduled follow-ups",
+        "detail": "8 tasks (3 need a human)"
+      }
+    ],
+    "totalCredits": 305,
+    "brandScore": 99,
+    "createdAt": "2026-01-12T09:00:00Z",
+    "updatedAt": "2026-01-12T09:00:00Z"
+  }
+}

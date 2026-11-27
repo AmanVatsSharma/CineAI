@@ -511,3 +511,41 @@ body {
 .mbtn-sec:hover { border-color: var(--b2) !important; color: var(--txt); }
 .mbtn-pri { background: var(--acc); color: #000; }
 .mbtn-pri:hover { background: #cbff5c; }
+
+/* ─── BRAND OS ─── */
+.bo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; align-items: start; }
+.bo-label { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--txt3); margin: 12px 0 6px; }
+.bo-label:first-child { margin-top: 0; }
+.bo-chip { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; padding: 3px 8px; border-radius: 6px; background: var(--surf2); border: 1px solid var(--b1); color: var(--txt2); white-space: nowrap; }
+.bo-chip.acc { background: var(--acc-d); color: var(--acc); border-color: rgba(184,255,62,.25); }
+.bo-chip.cyan { background: var(--cyan-d); color: var(--cyan); border-color: rgba(62,232,255,.25); }
+.bo-chip.vio { background: var(--vio-d); color: var(--vio); border-color: rgba(157,122,255,.25); }
+.bo-chip.gold { background: var(--gold-d); color: var(--gold); border-color: rgba(255,185,48,.25); }
+.bo-chip.rose { background: var(--rose-d); color: var(--rose); border-color: rgba(255,94,125,.25); }
+.bo-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.bo-swatch { display: flex; flex-direction: column; gap: 5px; width: 76px; }
+.bo-swatch-c { height: 44px; border-radius: 8px; border: 1px solid var(--b2); }
+.bo-swatch-n { font-size: 10.5px; color: var(--txt2); line-height: 1.3; }
+.bo-swatch-n b { display: block; color: var(--txt); font-weight: 600; font-family: var(--fm); font-size: 10.5px; }
+.bo-input { width: 100%; background: var(--bg2); border: 1px solid var(--b2); border-radius: 8px; color: var(--txt); font-family: var(--f); font-size: 12.5px; padding: 8px 10px; outline: none; transition: border-color .2s; }
+.bo-input:focus { border-color: rgba(184,255,62,.4); }
+.bo-input:disabled { opacity: .55; cursor: not-allowed; }
+textarea.bo-input { resize: vertical; line-height: 1.55; min-height: 70px; }
+.bo-field { display: flex; flex-direction: column; gap: 5px; font-size: 11px; color: var(--txt2); }
+.bo-row { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,.03); font-size: 12px; }
+.bo-row > span:first-child { color: var(--txt2); }
+.bo-list { list-style: none; display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--txt2); }
+.bo-list li { display: flex; gap: 7px; line-height: 1.45; }
+.bo-tabs { display: flex; gap: 2px; background: var(--surf2); border: 1px solid var(--b1); border-radius: 8px; padding: 3px; flex-wrap: wrap; }
+.bo-tab { font-family: var(--f); font-size: 12px; padding: 5px 11px; border-radius: 6px; cursor: pointer; color: var(--txt2); background: none; border: none; transition: var(--trans); }
+.bo-tab:hover { color: var(--txt); }
+.bo-tab.active { background: var(--surf3); color: var(--txt); }
+.bo-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.bo-table th { text-align: left; font-size: 10px; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: var(--txt3); padding: 6px 8px; border-bottom: 1px solid var(--b1); }
+.bo-table td { padding: 8px; border-bottom: 1px solid rgba(255,255,255,.03); vertical-align: top; }
+.bo-camp { display: flex; flex-direction: column; gap: 4px; text-align: left; width: 100%; background: var(--surf); border: 1px solid var(--b1); border-radius: 10px; padding: 11px 12px; cursor: pointer; color: inherit; font-family: var(--f); transition: var(--trans); }
+.bo-camp:hover { border-color: var(--b2); }
+.bo-camp.active { border-color: rgba(184,255,62,.4); background: var(--surf2); }
+.bo-layout { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 16px; align-items: start; }
+@media (max-width: 900px) { .bo-layout { grid-template-columns: 1fr; } }
+.bo-ad-frame { background: linear-gradient(160deg, var(--surf3), var(--bg2)); border: 1px solid var(--b2); border-radius: 10px; display: flex; flex-direction: column; justify-content: flex-end; padding: 12px; margin: 0 auto 10px; max-width: 100%; }

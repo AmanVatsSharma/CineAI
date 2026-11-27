@@ -182,6 +182,13 @@ export const NAV: NavGroup[] = [
     ],
   },
   {
+    group: "Brand Studio",
+    items: [
+      { id: "brands", label: "Brands", badge: "NEW", badgeCls: "nb-g" },
+      { id: "campaigns", label: "Campaigns", badge: "AI", badgeCls: "nb-g" },
+    ],
+  },
+  {
     group: "AI Models",
     items: [
       { id: "models", label: "Model Library", badge: "7", badgeCls: "nb-g" },
@@ -203,6 +210,8 @@ export const PAGE_TITLES: PageTitles = {
   generate: "Generate Video",
   videos: "My Videos",
   storyboard: "Storyboard",
+  brands: "Brands",
+  campaigns: "Campaigns",
   prompts: "Prompt Library",
   models: "Model Library",
   benchmarks: "Benchmarks",

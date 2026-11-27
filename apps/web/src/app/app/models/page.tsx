@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { MODELS } from "@cineai/mock-data";
 import { Reveal, StatusDot, TypeBadge } from "@cineai/ui";
+import { ModelCatalog } from "../../../components/brand-os/ModelCatalog";
 import { useDashboard } from "../DashboardContext";
 
 // Mock status + cost for each model
@@ -137,6 +138,10 @@ export default function ModelsPage() {
           );
         })}
       </div>
+
+      <Reveal>
+        <ModelCatalog />
+      </Reveal>
     </div>
   );
 }

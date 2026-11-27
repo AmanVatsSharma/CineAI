@@ -6,7 +6,7 @@ in `_run_generation` with actual model calls.
 
 import asyncio
 import uuid
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from typing import Literal
 
 from fastapi import APIRouter
@@ -43,7 +43,7 @@ async def create_generation(req: GenerationRequest):
         "model_name": req.model_name,
         "status": "queued",
         "progress": 0,
-        "created_at": datetime.now(timezone.utc).isoformat(),
+        "created_at": datetime.now(UTC).isoformat(),
     }
     _jobs[job_id] = job
     asyncio.create_task(_run_generation(job_id))

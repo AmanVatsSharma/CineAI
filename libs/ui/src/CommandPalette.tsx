@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Search, ArrowRight, LayoutDashboard, Wand2, Video, Layers,
-  Film, Cpu, Users, BarChart2, CreditCard, Code2, Settings,
+  Film, Cpu, Users, BarChart2, CreditCard, Code2, Settings, Palette, Megaphone,
 } from "lucide-react";
 
 const EASE_OUT = [0, 0, 0.2, 1];
@@ -17,6 +17,8 @@ const NAV_SECTIONS = [
       { id: "generate",  icon: Wand2,           label: "Generate" },
       { id: "videos",    icon: Video,            label: "Video Studio" },
       { id: "storyboard",icon: Film,             label: "Storyboard" },
+      { id: "brands",    icon: Palette,          label: "Brands & Guidelines" },
+      { id: "campaigns", icon: Megaphone,        label: "Campaigns & Agents" },
     ],
   },
   {
